@@ -22,7 +22,7 @@ class ProjectController extends Controller
 
         return response()->json([
             'projects' => $projects,
-        ]);
+        ], 200);
     }
 
     /**
@@ -50,7 +50,7 @@ class ProjectController extends Controller
         ]));
         return response()->json([
             'projects' => $project,
-        ]);
+        ], 200);
     }
 
     /**
@@ -64,7 +64,7 @@ class ProjectController extends Controller
         $project = Project::with('comments')->find($id);
         return response()->json([
             'project' => $project,
-        ]);
+        ], 200);
     }
 
     /**
@@ -96,7 +96,7 @@ class ProjectController extends Controller
         $project->save();
         return response()->json([
             'project' => $project,
-        ]);
+        ], 200);
     }
 
     /**

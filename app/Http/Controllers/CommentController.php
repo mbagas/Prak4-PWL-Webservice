@@ -19,7 +19,7 @@ class CommentController extends Controller
         $comments = ResourcesCommentResource::collection(Comment::all());
         return response()->json([
             'comments' => $comments,
-        ]);
+        ], 200);
     }
 
     /**
@@ -49,7 +49,7 @@ class CommentController extends Controller
         ]));
         return response()->json([
             'comment' => $comment,
-        ]);
+        ], 200);
     }
 
     /**
@@ -63,7 +63,7 @@ class CommentController extends Controller
         //
         return response()->json([
             'comment' => $comment,
-        ]);
+        ], 200);
     }
 
     /**
