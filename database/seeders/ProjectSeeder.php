@@ -21,7 +21,7 @@ class ProjectSeeder extends Seeder
         for ($i = 0; $i < 10; $i++) {
             $projects[] = [
                 'name' => 'Project ' . $i,
-                'description' => 'Project ' . $i . ' description',
+                'description' => 'Project ' . $i . ' description that has to be long enough to test the website and describing the project.',
                 'image' => 'project' . $i . '.jpg',
             ];
         }
